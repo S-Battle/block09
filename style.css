@@ -137,3 +137,15 @@ h2{
     font-size: 2rem;
     color: var(--color2);
 }
+#portHold{
+    display: flex;
+    justify-content: space-evenly;
+}
+#portHold img{
+    height: 15rem;
+}
+#portBlog{
+    margin-left: 100px;
+    margin-top: 150px;
+   width: 80%;
+}
