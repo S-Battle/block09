@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link rel="stylesheet" media="(min-width: 319px) and (max-width:650px)" href="mobile.css">
     <link rel="stylesheet" media="(min-width: 650px) and (max-width: 1200px)" href="tablet.css">
     <link rel="stylesheet" media="(min-width: 1201px) and (max-width: 1600px)" href="big.css">
     <link rel="stylesheet" media="(min-width: 1601px)" href="huge.css">
-    <title>About</title>
+    <title>Contact</title>
 </head>
 <body>
     <div id="navigation">
@@ -17,17 +16,14 @@
         <div><a href="portfolio.html">Portfolio</a></div>
         <div id="navStart"><a href="contact.html">Contact</a></div>        
     </div>
-    <div class="header"><h1>Portfolio</h1></div>
-    <div id="portHold" >
-        <div><img src="https://www.ibew100.org/pics/logo_IBEW.png" alt=""></div>
-        <div><img src="https://cdn11.bigcommerce.com/s-803d4/images/stencil/608x608/products/3516/3747/3747__36523.1674328027.jpg?c=2" alt=""></div>
-    </div>
 
-
-    <div id="portBlog">
-    <p class="topText">Unfortunately, I have no proffesional work experience in the information technology field.</p>
-    <p class= "bottomText">My professional experience does include working as a certified shorthand reporter and working as a journeyman electrician.</p>
-</div>
-    <script src="javascript.js"></script>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+    <script src="javascript2.js"></script>
 </body>
 </html>

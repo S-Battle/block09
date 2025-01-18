@@ -2,6 +2,8 @@ console.log("Hello World");
 
 let buttons = document.querySelectorAll("img");
 let labelArea = document.querySelector("#label");
+let labelAreaBig = document.querySelector("#label1200");
+let labelAreaSmall = document.querySelector("#labelSmall")
 
 buttons.forEach((button) =>{
     button.addEventListener("mouseover", (() =>{
@@ -40,7 +42,19 @@ function addToLabel(language){
 
     let newParagraph = document.createElement('p');
     let newText = document.createTextNode(textToSay);
+    if(window.innerWidth >1200 && window.innerWidth <= 1600){
+        console.log(window.screenX);
+        labelAreaBig.appendChild(newText);
+    }
+    else if(window.innerWidth <= 1200 ){
+        console.log(window.innerWidth) ;
+        labelAreaSmall.appendChild(newText);
+    }
+    else{
+        console.log("not in range");
+        console.log(window.screenX);
     labelArea.appendChild(newText);
+    }
 };
 
 function removeFromLabel(){
@@ -49,5 +63,17 @@ function removeFromLabel(){
        for(let i = labelArea.childNodes.length; i >= 1; i--){
         labelArea.removeChild(labelText[i -1]);
        }
-    }    
+    }  
+    if(labelAreaBig.hasChildNodes){
+        let labelText = labelAreaBig.childNodes;
+       for(let i = labelAreaBig.childNodes.length; i >= 1; i--){
+        labelAreaBig.removeChild(labelText[i -1]);
+       }
+    }      
+    if(labelAreaSmall.hasChildNodes){
+        let labelText = labelAreaSmall.childNodes;
+       for(let i = labelAreaSmall.childNodes.length; i >= 1; i--){
+        labelAreaSmall.removeChild(labelText[i -1]);
+       }
+    }     
 }

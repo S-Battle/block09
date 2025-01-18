@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(min-width: 319px) and (max-width:650px)" href="mobile.css">
+    <link rel="stylesheet" media="(min-width: 650px) and (max-width: 1200px)" href="tablet.css">
+    <link rel="stylesheet" media="(min-width: 1201px) and (max-width: 1600px)" href="big.css">
+    <link rel="stylesheet" media="(min-width: 1601px)" href="huge.css">
     <title>About</title>
 </head>
 <body>
     <div id="navigation">
         <div><a href="index.html">Home</a></div>
         <div><a href="about.html">About</a></div>
-        <div id="navStart"><a href="portfolio.html">Portfolio</a></div>        
+        <div><a href="portfolio.html">Portfolio</a></div>
+        <div id="navStart"><a href="contact.html">Contact</a></div>        
     </div>
     <h1 class="header" >Languages</h1>
     <div id="holder">
     <div class="languages">
-        <div id="l1" class="pl" ><img id="Java" class="regSize" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/800px-Java_programming_language_logo.svg.png" alt="Java programming language logo"></div>
+        <div id="I1" class="pl" ><img id="Java" class="regSize" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/800px-Java_programming_language_logo.svg.png" alt="Java programming language logo"></div>
         <div id="l2" class="pl" ><img id="Python" class="regSize" src="https://www.python.org/static/img/python-logo-large.c36dccadd999.png?1646853871" alt="Python programming language logo"></div>
+        <div id="label1200"></div>
         <div id="l3" class="pl" ><img id="Javascript" class="regSize" src="https://quintagroup.com/cms/js/js-image/javascript-logo.png" alt="Javascript programming language logo"></div>
         <div id="l4" class="pl" ><img id="C" class="regSize" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/380px-C_Programming_Language.svg.png?20201031132917" alt="C Programming language logo"></div>
     </div>
     <div id="label"></div>
 </div>
         <div id="blog">
+            <div id="labelSmall"></div>
             <p class="topText">
                 My favorite programming languages are Java, Python, Javascript, and C.
             </p>

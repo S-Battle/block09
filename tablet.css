@@ -1,0 +1,112 @@
+:root{
+    --color1: rgb(37, 36, 36);
+    --color3: rgb(71, 70, 70);
+    --color2: rgb(122, 119, 119);
+}
+#navigation{
+    background-color: var(--color2) ;
+    display: flex;
+    justify-content: center;
+    width: 96vw;    
+    gap: 5rem;
+    height: 4rem;
+    align-items: center;
+    color: white;
+    border: solid black 2px;   
+    font-size: 1.5rem;   
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header h1{
+    font-size: 4rem;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+}
+#centerpiece{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#aboutHead h2{
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+}
+#aboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#aboutMe p{
+    width: 80%;
+    font-size: 1.5rem;
+    color: var(--color2);
+    max-width: 500px;
+    text-align: center;
+}
+#aboutMe img{
+    width: 80%;
+    border-radius: 4rem;
+    max-width: 500px;;
+}
+.header{
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.languages{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.languages img{
+    width: 10vw;
+}
+#blog{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.topText{
+    margin-bottom:0px;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    color: var(--color2);
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end
+}
+.bottomText{
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    color: var(--color2);
+    grid-column: 1;
+    grid-row: 3;
+}
+#labelSmall{
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+   width: 90%;
+   font-size: 1.5rem;
+   color: var(--color2)
+}
+#portHold{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#portHold img{
+    width: 30vw;
+}
+
