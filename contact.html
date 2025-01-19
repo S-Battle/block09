@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="(min-width: 319px) and (max-width:650px)" href="mobile.css">
-    <link rel="stylesheet" media="(min-width: 650px) and (max-width: 1200px)" href="tablet.css">
-    <link rel="stylesheet" media="(min-width: 1201px) and (max-width: 1600px)" href="big.css">
-    <link rel="stylesheet" media="(min-width: 1601px)" href="huge.css">
+    <link rel="stylesheet" href="contactStyle.css">
     <title>Contact</title>
 </head>
 <body>
@@ -17,13 +14,43 @@
         <div id="navStart"><a href="contact.html">Contact</a></div>        
     </div>
 
-    <form action="/action_page.php">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <input type="submit" value="Submit">
-      </form> 
+    <div id="header" ><h1>Form</h1></div>
+
+    <div id="assembler">
+
+    <form id="form" method="post" action="success.html">
+
+        <div id="sec1">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Your First Name" required>
+        </div>
+
+        <div id="sec2">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Your Last Name" required>
+        </div>
+
+        <div id="sec3">
+        <label for="emailAddress">Email:</label>
+        <input type="email" name="email" id="emailAddress" placeholder="Your Email Address" required>
+        </div>
+
+        <div id="sec4">
+        <label for="phoneNumber">Phone Num:</label>
+        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required>
+        </div>
+        
+        <div id="sec5">
+        <input type="submit" id="submit" value="Submit"> 
+        </div>
+    
+    </form> 
+
+    </div>
+      <!-- <button id="submit">SUBMIT</button> -->
+
+
+
     <script src="javascript2.js"></script>
 </body>
 </html>

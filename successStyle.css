@@ -1,0 +1,28 @@
+
+
+
+
+.flexPex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    flex: 100%;
+    font-size: 4rem;
+}
+h2{
+    flex: 100%;
+    font-size: 3rem;
+}
+h3{ 
+    flex: 100%;
+    font-size: 2rem;
+}
+.exitText{
+    flex: 100%;
+    font-size: 3rem;
+    color: red;
+
+}

@@ -1,0 +1,303 @@
+:root{
+    --color1: rgb(37, 36, 36);
+    --color3: rgb(71, 70, 70);
+    --color2: rgb(122, 119, 119);
+}
+
+#assembler{
+    display: flex;
+    justify-content: flex-start;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    height: 60vh;    
+    width: 80vw;
+    flex-wrap: wrap;   
+    margin-top: 0%;
+    font-size: 2rem;
+    margin-left: 10%;
+    gap: 1%;
+}
+
+
+#header{
+    display: flex;
+    margin-left: 10%;
+    font-size: 2rem;
+
+}
+
+input[type=text], select{
+    min-width: 100px;
+    width: 90%;
+    font-size: 2rem;
+    padding: 1px 4px;
+    margin: 8px 0;
+    display: block;
+    border: 2px solid black;
+    border-radius: .3rem;
+    text-align: justify;
+   
+}
+
+input[type=email], select{
+    min-width: 100px;
+    width: 90%;
+    font-size: 2rem;
+    padding: 1px 4px;
+    margin: 8px 0;
+    display: block;
+    border: 2px solid black;
+    border-radius: .3rem;   
+    text-align: justify;
+}
+input[type=tel], select{
+    min-width: 100px;
+    width: 90%;
+    font-size: 2rem;
+    padding: 1px 4px;
+    margin: 8px 0;
+    display: block;
+    border: 2px solid black;
+    border-radius: .3rem;   
+    text-align: justify;
+}
+
+input[type=submit] {
+    width: 96%;
+    background-color: var(--color2);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    font-size: 2rem; 
+}
+input[type=submit]:hover {
+    background-color: var(--color1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1601px){
+
+    #navigation{
+        background-color: var(--color2) ;
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
+        height: 40px;
+        align-items: center;
+        color: white;
+        border: solid black 2px;     
+        width: 99%;
+    }
+
+    #navStart{
+        margin-right: 100px;
+    }
+
+    #sec1{
+        /* flex: 49%; */
+        flex: calc(50% - 4px - 8px); /*subtract 4 for the border and 8 for the padding*/
+        
+    }
+    #sec2{
+        /* flex: 49%; */
+        flex: calc(50% - 4px - 8px); /*subtract 4 for the border and 8 for the padding*/
+    }
+    #sec3{
+        flex: calc(50% - 4px - 8px); /*subtract 4 for the border and 8 for the padding*/;
+    }
+    #sec4{
+        flex: calc(50% - 4px - 8px); /*subtract 4 for the border and 8 for the padding*/
+    }
+    #sec5{
+        flex: 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1600px){
+
+    #navigation{
+        background-color: var(--color2) ;
+        display: flex;
+        justify-content: flex-end;
+        width: 99%;    
+        gap: 40px;
+        height: 40px;
+        align-items: center;
+        color: white;
+        border: solid black 2px;      
+    }
+
+    #navStart{
+        margin-right: 60px;
+    }
+
+    #sec1{
+        /* flex: 49%; */
+        flex: calc(50% - 4px - 8px); /*subtract 4 for the border and 8 for the padding*/
+        
+    }
+    #sec2{
+        /* flex: 49%; */
+        flex: calc(50% - 4px - 8px); /*subtract 4 for the border and 8 for the padding*/
+    }
+    #sec3{
+        flex: calc(50% - 4px - 8px); /*subtract 4 for the border and 8 for the padding*/;
+    }
+    #sec4{
+        flex: calc(50% - 4px - 8px); /*subtract 4 for the border and 8 for the padding*/
+    }
+    #sec5{
+        flex: 100%;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 1200px){
+
+    #navigation{
+        background-color: var(--color2) ;
+        display: flex;
+        justify-content: center;
+        width: 96vw;    
+        gap: 5rem;
+        height: 4rem;
+        align-items: center;
+        color: white;
+        border: solid black 2px;   
+        font-size: 1.5rem;   
+    }
+
+    #navStart{
+        margin-right: 0px;
+    }
+    
+
+    #sec1{
+        /* flex: 49%; */
+        flex: 100%;       
+    }
+    #sec2{
+        
+        flex: 100%;
+    }
+    #sec3{
+        flex: 100%;
+    }
+    #sec4{
+       flex: 100%;
+    }
+    #sec5{
+       flex: 100%;
+    }
+    input[type=submit] {
+        width: 91%;
+        background-color: var(--color2);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: .3rem;
+        cursor: pointer;
+        font-size: 2rem; 
+    }
+    input[type=submit]:hover {
+        background-color: var(--color1);
+    }
+
+
+
+}
+
+@media screen and (max-width: 650px){
+
+    #navigation{
+            background-color: var(--color2) ;
+            display: flex;
+            justify-content: center;
+            width: 95vw;    
+            gap: 3rem;
+            height: 6rem;
+            align-items: center;
+            color: white;
+            border: solid black 2px;   
+            font-size: 1rem;   
+    }
+
+    #navStart{
+        margin: 0;
+    }
+    
+    #header{
+        display: flex;
+        margin-left: 0;
+        justify-content: center;
+        font-size: 2rem;    
+    }
+    input[type=submit] {
+        width: 94%;
+        background-color: var(--color2);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: .3rem;
+        cursor: pointer;
+        font-size: 2rem; 
+    }
+    input[type=submit]:hover {
+        background-color: var(--color1);
+    }
+    #sec1{
+       
+        flex: 100%;       
+    }
+    #sec2{
+        
+        flex: 100%;
+    }
+    #sec3{
+        flex: 100%;
+    }
+    #sec4{
+       flex: 100%;
+    }
+    #sec5{
+       flex: 100%;
+    }
+    
+    
+    
+    }
+    
